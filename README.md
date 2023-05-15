@@ -14,7 +14,7 @@ Users should be able to:
 
 ## Links
 
-- Live Site URL: []()
+- Live Site URL: [https://jlb-time-tracker.netlify.app/](https://jlb-time-tracker.netlify.app/)
 
 ### Built with
 
