@@ -8,20 +8,14 @@ const AddTask = ({ onAdd }) => {
 
    const onSubmit = (e) => {
     e.preventDefault()
-    if (!text) {
+    if (!text || !day) {
         setError(prev => ({
             ...prev,
             task: true,
-        })) 
-        return
-    } 
-     if (!day) {
-        setError(prev => ({
-            ...prev,
             time: true
         }))
         return
-    }
+    } 
     onAdd({ text, day, reminder })
 
     setText('')
