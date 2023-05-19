@@ -28,10 +28,6 @@ body {
   margin-bottom: 20px;
 }
 
-.error {
-  color: hsl(348, 93%, 60%);
-}
-
 .btn {
   display: inline-block;
   background:hsl(226, 43%, 10%);
@@ -94,11 +90,21 @@ body {
   height: 40px;
   margin: 5px;
   padding: 3px 7px;
+  color: #000;
   font-size: 17px;
-  border: 1px solid hsl(226, 43%, 10%);
+  border: 1px solid hsl(235, 46%, 20%);
   border-radius: 5px;
 }
+.form-control input:focus {
+  outline: none;
+}
 
+.error {
+  color: hsl(348, 93%, 60%);
+}
+.form-control.error {
+  border: 1px solid hsl(348, 93%, 60%);
+}
 .form-control-check {
   display: flex;
   align-items: center;

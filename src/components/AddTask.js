@@ -26,20 +26,22 @@ const AddTask = ({ onAdd }) => {
   return (
     <form className="add-form" onSubmit={onSubmit}>
         <div className="form-control">
-            <label>Task</label>
+            <label className={error.task && "error"}>Task</label>
             <input
              type="text" 
              placeholder="Add Task"
+             className={error.task && "form-control error"}
              value={text}
              onChange={(e) => setText(e.target.value)} />
              {error.task ? <p className='error'>Please add a Task</p> : ""}
         </div>
         <div className="form-control">
-            <label>Day & Time</label>
+            <label className={error.time && "error"}>Day & Time</label>
             <input
              type="text"
              placeholder="Add Day 
             & Time"
+             className={error.time && "form-control error"}
              value={day}
              onChange={(e) => setDay(e.target.value)} />
              {error.time ? <p className='error'>Please add a Day & Time</p> : ""}
