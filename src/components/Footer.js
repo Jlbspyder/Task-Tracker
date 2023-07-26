@@ -7,11 +7,7 @@ const Footer = () => {
         About
       </Link>
       <div className="attribution">
-        Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">
-          Frontend Mentor
-        </a>
-        . Coded by{" "}
+        Coded by{" "}
         <a href="https://github.com/Jlbspyder" target="_blank" rel="noreferrer">
           Jlbspyder
         </a>
