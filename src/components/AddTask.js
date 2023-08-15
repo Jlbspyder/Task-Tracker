@@ -8,7 +8,7 @@ const AddTask = ({ onAdd }) => {
 
    const onSubmit = (e) => {
     e.preventDefault()
-    if (!text && !day) {
+    if (!text || !day) {
         setError(prev => ({
             ...prev,
             task: true,
