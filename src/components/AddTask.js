@@ -14,8 +14,8 @@ const AddTask = ({ onAdd }) => {
             task: true,
             time: true
         }))
-          return;
         }
+      return;
     } 
     onAdd({ text, day, reminder })
 
