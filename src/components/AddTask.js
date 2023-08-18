@@ -4,7 +4,7 @@ const AddTask = ({ onAdd }) => {
    const [text, setText] = useState('')
    const [day, setDay] = useState('') 
    const [reminder, setReminder] = useState(false)  
-   const [error, setError] = useState(false) 
+   const [error, setError] = useState({}) 
 
    const onSubmit = (e) => {
     e.preventDefault()
@@ -21,7 +21,7 @@ const AddTask = ({ onAdd }) => {
 
     setText('')
     setDay('')
-    setError(false)
+    setError({})
     setReminder(false)
    }
   return (
