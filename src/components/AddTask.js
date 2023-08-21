@@ -9,7 +9,7 @@ const AddTask = ({ onAdd }) => {
 
    const onSubmit = (e) => {
     e.preventDefault()
-    if (!text || !day) {
+    if (text === '' || day === '') {
         setTextError(true);
         setDayError(true);
        return;
