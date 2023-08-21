@@ -12,8 +12,7 @@ const AddTask = ({ onAdd }) => {
     if (text === '' || day === '') {
         setTextError(true);
         setDayError(true);
-       return;
-        }
+        } else {
    
     onAdd({ text, day, reminder })
 
@@ -22,6 +21,7 @@ const AddTask = ({ onAdd }) => {
     setTextError(false)
     setDayError(false)
     setReminder(false)
+    }
    }
   return (
     <form className="add-form" onSubmit={onSubmit}>
