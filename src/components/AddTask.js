@@ -14,7 +14,7 @@ const AddTask = ({ onAdd }) => {
         setDayError(true);
        return;
         }
-    } 
+   
     onAdd({ text, day, reminder })
 
     setText('')
