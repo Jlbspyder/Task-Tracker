@@ -11,9 +11,9 @@ const AddTask = ({ onAdd }) => {
     e.preventDefault()
     if (!text || !day) {
         setTextError(true);
-        setDayError(true)
+        setDayError(true);
+       return;
         }
-      return;
     } 
     onAdd({ text, day, reminder })
 
