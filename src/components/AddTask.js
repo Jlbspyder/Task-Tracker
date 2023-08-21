@@ -33,7 +33,7 @@ const AddTask = ({ onAdd }) => {
              className={error.task && "form-control error"}
              value={text}
              onChange={(e) => setText(e.target.value)} />
-             {textError ? <p className='error'>Please add a Task</p> : ""}
+             {textError ? <p className='error'>Please add a </p> : ""}
         </div>
         <div className="form-control">
             <label className={error.time && "error"}>Day & Time</label>
