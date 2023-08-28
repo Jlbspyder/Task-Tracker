@@ -9,10 +9,31 @@ const AddTask = ({ onAdd }) => {
 
    const onSubmit = (e) => {
     e.preventDefault()
+    if (text && day === '') {
+            setTextError(false);
+            setDayError(true)
+            setTimeout(() =>{
+                setTextError(false);
+                setDayError(false)
+            },3000)
+        } else
+    if (text === '' && day) {
+        setTextError(true);
+        setDayError(false);
+        setTimeout(() =>{
+            setTextError(false);
+            setDayError(false)
+        },3000)
+    } else 
     if (text === '' || day === '') {
         setTextError(true);
         setDayError(true);
-        } else {
+        setTimeout(() =>{
+            setTextError(false);
+            setDayError(false)
+        },3000)
+        } 
+       else {
    
     onAdd({ text, day, reminder })
 
