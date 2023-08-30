@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="attribution">
         Coded by{" "}
         <a href="https://github.com/Jlbspyder" target="_blank" rel="noreferrer">
-          Jlbspyder
+          JLBSPYDER
         </a>
         .
       </div>
